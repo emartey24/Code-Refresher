@@ -11,14 +11,14 @@ function Home() {
 
   return (
     <>
-    <div>
+  
     
     <div className="App">
      <img src={TRnobakcground} /> 
     </div>
 
     
-    </div>
+    
 
     </>
     
