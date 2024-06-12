@@ -7,11 +7,29 @@ function HowtoPlay() {
   return (
     <>
     <div className="HTP">
-     <img src={HTP1} /> 
+    <img
+            style={{ height: "90vh" }}
+            className="d-block w-100"
+            src={HTP1}
+            alt="First slide"
+          />
+     {/* <img src={HTP1} />  */}
      <br></br>
-     <img src={HTP2} /> 
+
+     <img
+            style={{ height: "90vh" }}
+            className="d-block w-100"
+            src={HTP2}
+            alt="First slide"
+          />
+    
      <br></br>
-     <img src={HTP3} /> 
+     <img
+            style={{ height: "90vh" }}
+            className="d-block w-100"
+            src={HTP3}
+            alt="First slide"
+          />
 
 
     </div>
