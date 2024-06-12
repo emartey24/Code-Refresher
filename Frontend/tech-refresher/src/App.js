@@ -25,7 +25,7 @@ function App() {
             <Route index element={<Home/>} />
             <Route path="howtoplay" element={<HowtoPlay />} /> 
             <Route path="login" element={<LogIn />} /> 
-            <Route path="Donate" element={<Donate />} />
+            <Route path="Shop" element={<Donate />} />
           </Route>
         </Routes>
       </BrowserRouter>
