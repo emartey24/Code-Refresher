@@ -1,11 +1,13 @@
 {
-  "name": "backend",
+  "name": "server",
   "version": "1.0.0",
   "description": "This is Backend for Tech Refresher",
   "main": "server.js",
   "scripts": {
-    "test": "nodemon server.js"
+    "start": "nodemon server.js && psql postgres://kugfhzwa:XDEvpJvLkLV3cPozzlgmC2L9PRM5BJCw@ruby.db.elephantsql.com/kugfhzwa"
   },
+
+  
   "author": "Ashley,David,Gabe,Emmanuel",
   "license": "ISC",
   "dependencies": {
