@@ -74,9 +74,18 @@ app.all('/*', (req, res, next) => {
 
 /*
 Endpoint:
-    GET
+    GET endpoint for fetching tech cards
 */
 app.get('/tech', async (req, res) => {
+  res.json(await db.many('SELECT * FROM tech'))
+});
+
+/*
+Endpoint:
+    GET endpoint for users login
+*/
+app.get('/login', async (req, res) => {
+  res.json(await db.many('SELECT * FROM login_test'))
 });
 
 /*
@@ -84,9 +93,15 @@ Endpoint:
     POST
 */
 
-app.post('/tech', (req, res) => {
+app.post('/tech', async (req, res) => {
+  
+    console.log(req.body)
     
+    await db.none('INSERT INTO tech(name, question_img, answer_img) VALUES($1, $2, $3)',
+    [req.body.name, req.body.question_img, req.body.answer_img]);
+    res.json({name: req.body.name, question: req.body.question_img, answer: req.body.answer_img})
 });
+
 
 /*
 Endpoint:
@@ -102,11 +117,13 @@ Endpoint:
     DELETE
 */
 
-app.delete('/tech', (req, res) => {
-    
+app.delete('/tech/:id', async (req, res) => {
+    console.log("id: ", req.params.id);
+    await db.oneOrNone('DELETE FROM tech WHERE id = $1', [req.params.id]); 
+    res.json(req.params.id)
 });
 
 // To run server
-app.listen(3000, () => {
-    console.log("Server is running on port 3000");
+app.listen(3001, () => {
+    console.log("Server is running on port 3001");
 })
