@@ -1,6 +1,5 @@
 CREATE TABLE tech(
 id SERIAL PRIMARY KEY,
-name VARCHAR(50) UNIQUE NOT NULL,
 question VARCHAR(500) NOT NULL,
 answer VARCHAR(500) NOT NULL
 );
@@ -17,18 +16,18 @@ leaderscore INTEGER
 
 
 
-INSERT INTO tech(name, question, answer)
+INSERT INTO tech( question, answer)
 VALUES 
-    ('HTML','HTML','<h1>HelloWorld</h1>'),
-    ('CSS','CSS','background-color:red;'),
-    ('Javascript','Javascript','for(let i=0; i<data.length; i++)'),
-    ('React','React','const[movies,setMovie]=useState("");'),
-    ('Express.js','How do you install Express.js','npm i express'),
-    ('Node.js','Node.js','npm run start'),
-    ('Api','REST','Representational State Transfer'),
-    ('Swagger','Swagger','CODE 200 DESCRIPTION: SUCCESSFULLY CREATES A NEW TO DO ITEM'),
-    ('Postgres','POSTGRESQL','SELECT*FROM _'),
-    ('CommandLine','CommandLine','LS');
+    ('HTML','<h1>HelloWorld</h1>'),
+    ('CSS','background-color:red;'),
+    ('Javascript','for(let i=0; i<data.length; i++)'),
+    ('React','const[movies,setMovie]=useState("");'),
+    ('How do you install Express.js','npm i express'),
+    ('Node.js','npm run start'),
+    ('REST','Representational State Transfer'),
+    ('Swagger','CODE 200 DESCRIPTION: SUCCESSFULLY CREATES A NEW TO DO ITEM'),
+    ('POSTGRESQL','SELECT*FROM _'),
+    ('CommandLine','LS');
 
 
 INSERT INTO login_test(firstname, lastname, password, email, leaderscore)
