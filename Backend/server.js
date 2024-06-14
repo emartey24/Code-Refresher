@@ -97,9 +97,9 @@ app.post('/tech', async (req, res) => {
   
     console.log(req.body)
     
-    await db.none('INSERT INTO tech(name, question, answer) VALUES($1, $2, $3)',
-    [req.body.name, req.body.question, req.body.answer]);
-    res.json({name: req.body.name, question: req.body.question, answer: req.body.answer})
+    await db.none('INSERT INTO tech(question, answer) VALUES($1, $2)',
+    [req.body.question, req.body.answer]);
+    res.json({question: req.body.question, answer: req.body.answer})
 });
 
 
