@@ -1,11 +1,11 @@
 CREATE TABLE tech(
 id SERIAL PRIMARY KEY,
 name VARCHAR(50) UNIQUE NOT NULL,
-question_img VARCHAR(500) NOT NULL,
-answer_img VARCHAR(500) NOT NULL
+question VARCHAR(500) NOT NULL,
+answer VARCHAR(500) NOT NULL
 );
 
-CREATE TABLE login(
+CREATE TABLE login_test(
 id SERIAL PRIMARY KEY,
 firstname VARCHAR(50),
 lastname VARCHAR(50),
@@ -17,15 +17,21 @@ leaderscore INTEGER
 
 
 
-INSERT INTO tech(name, question_img, answer_img)
+INSERT INTO tech(name, question, answer)
 VALUES 
-    ('HTML','/Users/corcoding/Code-Refresher/Backend/Images/frontcardhtml.png','Backend/Images/frontcardhtmlconcept.png'),
-    ('CSS','/Users/corcoding/Code-Refresher/Backend/Images/frontcardcss.png','Backend/Images/frontcardcssconcept.png'),
-    ('Javascript','/Users/corcoding/Code-Refresher/Backend/Images/frontcardjavascript.png','Backend/Images/frontcardjavascriptconcept.png'),
-    ('React','/Users/corcoding/Code-Refresher/Backend/Images/frontcardreact.png','Backend/Images/frontcardreactconcept.png'),
-    ('Express.js','/Users/corcoding/Code-Refresher/Backend/Images/frontcardexpress.png','Backend/Images/frontcardexpressconcept.png'),
-    ('Node.js','/Users/corcoding/Code-Refresher/Backend/Images/frontcardnode.png','Backend/Images/frontcardnodejsconcept.png'),
-    ('Api','/Users/corcoding/Code-Refresher/Backend/Images/frontcardapi.png','Backend/Images/frontcardapiconcept.png'),
-    ('Swagger','/Users/corcoding/Code-Refresher/Backend/Images/frontcardswagger.png','Backend/Images/frontcardswaggerconcept.png'),
-    ('Postgres','/Users/corcoding/Code-Refresher/Backend/Images/frontcardsql.png','Backend/Images/frontcardsqlconcept.png'),
-    ('CommandLine','/Users/corcoding/Code-Refresher/Backend/Images/frontcardcli.png','Backend/Images/frontcardcliconcept.png');
+    ('HTML','HTML','<h1>HelloWorld</h1>'),
+    ('CSS','CSS','background-color:red;'),
+    ('Javascript','Javascript','for(let i=0; i<data.length; i++)'),
+    ('React','React','const[movies,setMovie]=useState("");'),
+    ('Express.js','How do you install Express.js','npm i express'),
+    ('Node.js','Node.js','npm run start'),
+    ('Api','REST','Representational State Transfer'),
+    ('Swagger','Swagger','CODE 200 DESCRIPTION: SUCCESSFULLY CREATES A NEW TO DO ITEM'),
+    ('Postgres','POSTGRESQL','SELECT*FROM _'),
+    ('CommandLine','CommandLine','LS');
+
+
+INSERT INTO login_test(firstname, lastname, password, email, leaderscore)
+VALUES
+    ('jack','ryan','test123','jackryan@gmail.com',90),
+    ('david','lee','test321','davidlee@gmail.com',80);
