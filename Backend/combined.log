@@ -33,3 +33,13 @@
 {"body":{},"endpoint":"/tech","ip":"::1","level":"info","method":"GET","pathParameters":{"0":"tech"},"query":{},"service":"user-service","timestamp":"Fri, 14 Jun 2024 14:49:37 GMT"}
 {"body":{"answer":"test answer","name":"test","question":"test question"},"endpoint":"/tech","ip":"::1","level":"info","method":"POST","pathParameters":{"0":"tech"},"query":{},"service":"user-service","timestamp":"Fri, 14 Jun 2024 14:49:47 GMT"}
 {"body":{},"endpoint":"/tech","ip":"::1","level":"info","method":"GET","pathParameters":{"0":"tech"},"query":{},"service":"user-service","timestamp":"Fri, 14 Jun 2024 14:49:55 GMT"}
+{"body":{},"endpoint":"/tech","ip":"::1","level":"info","method":"GET","pathParameters":{"0":"tech"},"query":{},"service":"user-service","timestamp":"Fri, 14 Jun 2024 15:47:04 GMT"}
+{"body":{},"endpoint":"/tech","ip":"::1","level":"info","method":"GET","pathParameters":{"0":"tech"},"query":{},"service":"user-service","timestamp":"Fri, 14 Jun 2024 15:47:04 GMT"}
+{"body":{},"endpoint":"/tech","ip":"::1","level":"info","method":"GET","pathParameters":{"0":"tech"},"query":{},"service":"user-service","timestamp":"Fri, 14 Jun 2024 15:53:35 GMT"}
+{"body":{},"endpoint":"/tech","ip":"::1","level":"info","method":"GET","pathParameters":{"0":"tech"},"query":{},"service":"user-service","timestamp":"Fri, 14 Jun 2024 15:53:35 GMT"}
+{"body":{},"endpoint":"/tech","ip":"::1","level":"info","method":"GET","pathParameters":{"0":"tech"},"query":{},"service":"user-service","timestamp":"Fri, 14 Jun 2024 15:53:39 GMT"}
+{"body":{},"endpoint":"/tech","ip":"::1","level":"info","method":"GET","pathParameters":{"0":"tech"},"query":{},"service":"user-service","timestamp":"Fri, 14 Jun 2024 15:53:39 GMT"}
+{"body":{},"endpoint":"/tech","ip":"::1","level":"info","method":"GET","pathParameters":{"0":"tech"},"query":{},"service":"user-service","timestamp":"Fri, 14 Jun 2024 15:53:43 GMT"}
+{"body":{},"endpoint":"/tech","ip":"::1","level":"info","method":"GET","pathParameters":{"0":"tech"},"query":{},"service":"user-service","timestamp":"Fri, 14 Jun 2024 15:53:43 GMT"}
+{"body":{},"endpoint":"/tech","ip":"::1","level":"info","method":"GET","pathParameters":{"0":"tech"},"query":{},"service":"user-service","timestamp":"Fri, 14 Jun 2024 16:00:40 GMT"}
+{"body":{},"endpoint":"/tech","ip":"::1","level":"info","method":"GET","pathParameters":{"0":"tech"},"query":{},"service":"user-service","timestamp":"Fri, 14 Jun 2024 16:00:41 GMT"}
