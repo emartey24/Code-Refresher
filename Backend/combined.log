@@ -28,3 +28,8 @@
 {"body":{},"endpoint":"/tech","ip":"::1","level":"info","method":"GET","pathParameters":{"0":"tech"},"query":{},"service":"user-service","timestamp":"Wed, 12 Jun 2024 18:22:04 GMT"}
 {"body":{},"endpoint":"/tech/15","ip":"::1","level":"info","method":"DELETE","pathParameters":{"0":"tech/15"},"query":{},"service":"user-service","timestamp":"Wed, 12 Jun 2024 18:22:11 GMT"}
 {"body":{},"endpoint":"/tech","ip":"::1","level":"info","method":"GET","pathParameters":{"0":"tech"},"query":{},"service":"user-service","timestamp":"Wed, 12 Jun 2024 18:22:21 GMT"}
+{"body":{},"endpoint":"/tech","ip":"::1","level":"info","method":"GET","pathParameters":{"0":"tech"},"query":{},"service":"user-service","timestamp":"Fri, 14 Jun 2024 14:48:28 GMT"}
+{"body":{"answer":"test answer-img","name":"test","question":"test question-img"},"endpoint":"/tech","ip":"::1","level":"info","method":"POST","pathParameters":{"0":"tech"},"query":{},"service":"user-service","timestamp":"Fri, 14 Jun 2024 14:48:33 GMT"}
+{"body":{},"endpoint":"/tech","ip":"::1","level":"info","method":"GET","pathParameters":{"0":"tech"},"query":{},"service":"user-service","timestamp":"Fri, 14 Jun 2024 14:49:37 GMT"}
+{"body":{"answer":"test answer","name":"test","question":"test question"},"endpoint":"/tech","ip":"::1","level":"info","method":"POST","pathParameters":{"0":"tech"},"query":{},"service":"user-service","timestamp":"Fri, 14 Jun 2024 14:49:47 GMT"}
+{"body":{},"endpoint":"/tech","ip":"::1","level":"info","method":"GET","pathParameters":{"0":"tech"},"query":{},"service":"user-service","timestamp":"Fri, 14 Jun 2024 14:49:55 GMT"}
