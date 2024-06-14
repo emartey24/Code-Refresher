@@ -5,6 +5,7 @@ import HowtoPlay from "./Components/HowtoPlay";
 import Home from "./Components/Home";
 import LogIn from "./Components/LogIn";
 import Donate from "./Components/Donate";
+import Game from "./Components/Game";
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
             <Route path="howtoplay" element={<HowtoPlay />} /> 
             <Route path="login" element={<LogIn />} /> 
             <Route path="Shop" element={<Donate />} />
+            <Route path="Game" element={<Game />} />
           </Route>
         </Routes>
       </BrowserRouter>
