@@ -13,6 +13,7 @@ const Navbarcomponent = () => {
            <li><a><Link to="/howtoplay">How to Play</Link></a></li> 
            <li><a><Link to="/login">Log In</Link></a></li> 
            <li><a><Link to="/Shop">Shop</Link></a></li> 
+           <li><a><Link to="/Game">Game</Link></a></li> 
         </ul>
         <Outlet />
       </>
