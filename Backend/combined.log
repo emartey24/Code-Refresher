@@ -43,3 +43,4 @@
 {"body":{},"endpoint":"/tech","ip":"::1","level":"info","method":"GET","pathParameters":{"0":"tech"},"query":{},"service":"user-service","timestamp":"Fri, 14 Jun 2024 15:53:43 GMT"}
 {"body":{},"endpoint":"/tech","ip":"::1","level":"info","method":"GET","pathParameters":{"0":"tech"},"query":{},"service":"user-service","timestamp":"Fri, 14 Jun 2024 16:00:40 GMT"}
 {"body":{},"endpoint":"/tech","ip":"::1","level":"info","method":"GET","pathParameters":{"0":"tech"},"query":{},"service":"user-service","timestamp":"Fri, 14 Jun 2024 16:00:41 GMT"}
+{"body":{},"endpoint":"/tech","ip":"::1","level":"info","method":"GET","pathParameters":{"0":"tech"},"query":{"name":"1"},"timestamp":"Fri, 14 Jun 2024 18:52:57 GMT"}
