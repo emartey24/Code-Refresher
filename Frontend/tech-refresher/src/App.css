@@ -7,6 +7,18 @@ body{
   background-color: black !important;
 }
 
+.about{
+  margin-right: 15%;
+  margin-left: 15%;
+
+
+}
+
+h2{
+  text-align: center !important;
+  color: white !important;
+
+}
 .h1{
   text-align: center;
   color: #EEB30D !important;
