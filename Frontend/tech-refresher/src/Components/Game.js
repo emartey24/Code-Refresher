@@ -112,6 +112,8 @@ function Game() {
    
 
   return (
+    <>
+    <Navbarcomponent />
     <center>
     <br/>
     <br/>
@@ -178,6 +180,7 @@ function Game() {
             </div>
         </ReactCardFlip>
     </center>
+    </>
   )
 }
 
