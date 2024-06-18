@@ -1,24 +1,26 @@
 import React, { useState } from 'react';
 import '../LogIn.css';
 import { FaUser, FaLock } from 'react-icons/fa';
-import { useNavigate } from 'react-router-dom'; 
+import { useNavigate } from 'react-router-dom'; // Import useNavigate
 
-const LogIn = ({ onLogin }) => {
+const Register = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [confirmPassword, setConfirmPassword] = useState('');
   const [emailError, setEmailError] = useState('');
   const [passwordError, setPasswordError] = useState('');
-  // useNavigate with help redirect to the game page once login is successfully confirmed 
-  // with proper email input and password 
-  const navigate = useNavigate(); 
+  const [confirmPasswordError, setConfirmPasswordError] = useState('');
+  const navigate = useNavigate();
 
   const validateEmail = (email) => {
     return /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(email);
   };
 
-  const handleLogin = () => {
+  // storing the data for email and password once it's properly inputted 
+  const handleRegister = () => {
     setEmailError('');
     setPasswordError('');
+    setConfirmPasswordError('');
 
     if (email.trim() === '') {
       setEmailError('Please enter your email');
@@ -38,22 +40,27 @@ const LogIn = ({ onLogin }) => {
       return;
     }
 
-    // confirm that the login is successful through console.log via browser 
-    console.log('Login successful');
-
-    // Call the onLogin callback to trigger navigation
-    if (typeof onLogin === 'function') {
-      onLogin();
+    if (confirmPassword.trim() === '') {
+      setConfirmPasswordError('Please confirm your password');
+      return;
     }
 
-    // Navigate to the game page
-    navigate('/game');
+    if (password !== confirmPassword) {
+      setConfirmPasswordError('Passwords do not match');
+      return;
+    }
+
+   
+    console.log('Registration successful');
+
+    // Navigate to the login page after successful registration
+    navigate('/login');
   };
 
   return (
     <div className="loginBody">
       <form className="wrapper" action="">
-        <h1>Login</h1>
+        <h1>Register</h1>
         <div className="input-box">
           <input
             value={email}
@@ -75,14 +82,25 @@ const LogIn = ({ onLogin }) => {
           <FaLock className="icon" />
           <label className="errorLabel">{passwordError}</label>
         </div>
+        <div className="input-box">
+          <input
+            value={confirmPassword}
+            type="password"
+            placeholder="Confirm your password"
+            onChange={(ev) => setConfirmPassword(ev.target.value)}
+            className="inputBox"
+          />
+          <FaLock className="icon" />
+          <label className="errorLabel">{confirmPasswordError}</label>
+        </div>
 
-        <button type="button" onClick={handleLogin}>
-          Login
+        <button type="button" onClick={handleRegister}>
+          Register
         </button>
 
-        <div className="register-link">
+        <div className="login-link">
           <p>
-            Don't have an account? <a href="#">Register</a>
+            Already have an account? <a href="/login">Login</a>
           </p>
         </div>
       </form>
@@ -90,4 +108,4 @@ const LogIn = ({ onLogin }) => {
   );
 };
 
-export default LogIn;
+export default Register;
