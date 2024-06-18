@@ -4,7 +4,7 @@
 
 Tech-Refresher is an innovative yet nostalgic approach to educating and refreshing new and aspiring developers with the foundational  coding languages, frameworks, and technology concepts. Tech Refresher is a web application that doubles as an educational flash-card styled memory game. 
 
-Just like a standard memory game, the user is offered the chance to choose two random cards at a time out of a 20 card digital pile cards. 
+Just like a standard memory game, the user is offered the chance to choose two random cards at a time out of a pile of digital cards. 
 
 1. The game starts with All the cards are face down. 
 
@@ -21,38 +21,38 @@ Tech-Refresher was developed for and by coding students. We recognized the strug
 
 ## The Technologies we used 
 
-### [React]
-    We used React framework to provide an interactive and responsive User Interface. 
+## • React
+For the Frontend of our site we used React framework to provide an interactive and responsive User Interface. 
 
-### [PostgreSQL]
-    We used PostgresSql to create tables and store values to build our database for users, login data, cards, and card information. 
-
-
-### [ElephantSQL]
-    We used ElephantSql to make our databases accessible externally. 
+### • PostgresSQL / ElephantSQL
+    SQL was used to store values &  build our database for different sets of required data.
 
 
-### [Express] 
+### • Express
     We used Express is to handle routing, middleware integration, request/response handling, during the process of building  our web server in Node.js.
 
-### [Nodemon] 
+### • Nodemon
     We used Nodemon To automatically restart the node application when file changes in the directory are detected.
 
-### [Pg-promise] 
+### • PG Promise
     We used Pg-promise to convert the callback interface into a promises based interface. This allowed us to manipulate our postgresql database from Javascript files.
 
-### [Winston] 
+### • Winston
     We used Winston for logging. 
 
-### [Bcrypt] 
+### • Bcrypt
     We used this technology to encrypt password any personal information.
 
-### [React-Card-Flip]
+###  • React-Card-Flip
     We integrated React-Card-Flip for our memory game. When you click on the card it flips over because of this technology. 
 
-###
+### • Vercel
 
 # [Swagger Documentation]
+
+## Visit Our Website Here
+# [Tech Refresher]
+ 
 
 ## Home Page
 <img src="./Frontend/tech-refresher/src/Images/TechRefresherFrontPage.png" ></img>
@@ -63,7 +63,13 @@ Tech-Refresher was developed for and by coding students. We recognized the strug
 <img src="./Frontend/tech-refresher/src/Images/HTPpage3.png" ></img>
 
 ## Login Page
-<img src="./Frontend/tech-refresher/src/Images/TRlogin.png" ></img>
+<img src="./Frontend/tech-refresher/src/Images/TR Updated LogIn.png" ></img>
+
+## Register Page
+<img src="./Frontend/tech-refresher/src/Images/TR Register.png" ></img>
+
+## Game Page
+<img src="./Frontend/tech-refresher/src/Images/TRShopPage.png" ></img>
 
 ## Shop Page
 <img src="./Frontend/tech-refresher/src/Images/TRShopPage.png" ></img>
@@ -102,20 +108,12 @@ Tech-Refresher was developed for and by coding students. We recognized the strug
 
 
 
-<!-- Technology Links -->
-[bcrypt]:https://www.npmjs.com/package/bcrypt
-[express]:https://www.npmjs.com/package/express
-[nodemon]:https://www.npmjs.com/package/nodemon
-[Pg-promise]:https://www.npmjs.com/package/pg-promise
-[Winston]:https://www.npmjs.com/package/winston
-[PostgreSQL]:https://www.postgresqltutorial.com/
-[ElephantSQL]:https://www.elephantsql.com/
-[React-Card-Flip]:https://www.npmjs.com/package/react-card-flip
-[React]:https://react.dev/
+<!-- Website Link -->
+[Tech Refresher]:https://code-refresher.vercel.app/
 
 
 <!-- Documentation -->
-[Swagger Documentation]:
+[Swagger Documentation]:https://code-refresher.vercel.app/home
 
 <!-- Linkedin|Github Pages -->
 [Linkedin]:https://www.linkedin.com/in/adavis07/
