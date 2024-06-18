@@ -17,7 +17,6 @@ function Donate() {
     </div>
 
     
-    
       <div className='cards'>
     <Card style={{ width: '18rem' }}>
       <Card.Img variant="top" img src={Developers} />

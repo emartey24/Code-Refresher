@@ -139,46 +139,6 @@ function Game() {
     <div>{card10}</div>
     <div><img src={card10a} alt='card 1 answer'></img></div>
 
-    <ReactCardFlip isFlipped={flip}
-            flipDirection="vertical">
-           <div onClick={() => setFlip(!flip)} style={{
-                width: '470px',
-                height: '400px',
-                fontSize: '40px',
-                color: 'green',
-                margin: '20px',
-                borderRadius: '4px',
-                textAlign: 'center',
-                padding: '20px'
-            }}>
-                <br />
-                <br />
-            </div>
-            <div style={{
-                width: '700px',
-                height: '700px',
-                background: '#FBD7F8',
-                fontSize: '20px',
-                color: 'blue',
-                margin: '20px',
-                borderRadius: '4px',
-                textAlign: 'center',
-                padding: '20px'
-            }}>
-                {/* here is where i add the state */}
-                <p className="libraFlip">{card1}</p>
-                <br />
-                <button style={{
-                    width: '150px',
-                    padding: '10px',
-                    fontSize: '20px',
-                    background: '#F5D9FA',
-                    fontWeight: 'bold',
-                    borderRadius: '5px'
-                }} onClick={() => setFlip(!flip)}>
-                    Flip</button>
-            </div>
-        </ReactCardFlip>
     </center>
     </>
   )
