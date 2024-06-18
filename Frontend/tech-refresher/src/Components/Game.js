@@ -3,8 +3,6 @@ import { useEffect, useState, useContext } from 'react'
 import Card from './Card';
 import Navbarcomponent from './Navbarcomponent';
 
-
-
 function Game() {
 
     const [flipper, setFlipper] = useState(false)
