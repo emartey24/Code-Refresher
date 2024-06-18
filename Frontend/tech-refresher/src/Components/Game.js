@@ -2,6 +2,7 @@ import React from 'react'
 import { useEffect, useState } from 'react'
 import ReactCardFlip from 'react-card-flip';
 import Card from './Card';
+import Navbarcomponent from './Navbarcomponent';
 
 function Game() {
 
@@ -61,6 +62,8 @@ function Game() {
 
 
   return (
+    <>
+        <Navbarcomponent />
     <center>
     <br/>
     <br/>
@@ -127,6 +130,7 @@ function Game() {
             </div>
         </ReactCardFlip>
     </center>
+    </>
   )
 }
 

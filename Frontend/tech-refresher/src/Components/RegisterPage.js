@@ -12,12 +12,12 @@ const Register = () => {
   const [confirmPasswordError, setConfirmPasswordError] = useState('');
   const navigate = useNavigate();
 
-
   const validateEmail = (email) => {
     return /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(email);
   };
 
-  // storing the data for email and password once it's properly inputted 
+
+  // storing the data for email and password once it's properly inputted
   const handleRegister = () => {
     setEmailError('');
     setPasswordError('');

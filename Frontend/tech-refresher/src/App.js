@@ -11,18 +11,13 @@ import RegisterPage from './Components/RegisterPage';
 
 function App() {
   const handleLogin = () => {
-    // Perform any additional login logic here if needed
-    // Navigate to the game page after login
+    // Navigate to the home page after login
     console.log('Login successful');
-    // Replace with your navigation logic after login
-    // For example:
-    // navigate('/game');
   };
 
   return (
     <div>
       <BrowserRouter>
-        <Navbarcomponent />
         <Routes>
           <Route path="/" element={<RegisterPage />} />
           <Route path="home" element={<Home />} />
