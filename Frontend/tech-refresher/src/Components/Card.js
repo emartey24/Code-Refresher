@@ -7,7 +7,22 @@ function Card(props) {
     //establishing state for the flip for the flip card
     const [flip, setFlip] = useState(false);
     //establishing state for the sign data
-    const [libra, setLibra] = useState();
+
+
+    const handleClick = () => {
+        props.handleChoice(props.id)
+
+    }
+
+    useEffect(() => {
+        if(props.flipper === true){
+            setTimeout(()=>{
+                setFlip(false)
+               }, 2000)
+        }
+    },[props.flipper])
+
+
     
     
       
@@ -17,9 +32,9 @@ function Card(props) {
     <div></div>
      <ReactCardFlip isFlipped={flip}
             flipDirection="vertical">
-           <div className='card' onClick={() => setFlip(!flip)} style={{
-                width: '150px',
-                height: '150px',
+           <div className='card' onClick={() => {setFlip(!flip); handleClick()}} style={{
+                width: '225px',
+                height: '120px',
                 fontSize: '40px',
                 backgroundColor: 'white',
                 color: 'green',
@@ -32,29 +47,19 @@ function Card(props) {
                 <br />
             </div>
             <div style={{
-                width: '150px',
-                height: '150px',
+                width: '225px',
+                height: '120px',
                 background: '#FBD7F8',
                 fontSize: '10px',
                 color: 'blue',
                 margin: '20px',
                 borderRadius: '4px',
                 textAlign: 'center',
-                padding: '20px'
+                padding: '40px'
             }}>
                 {/* here is where i add the state */}
                 <p className="libraFlip">{props.input}</p>
-                <br />
-                <button style={{
-                    width: '50px',
-                    padding: '10px',
-                    fontSize: '8px',
-                    background: '#F5D9FA',
-                    fontWeight: 'bold',
-                    borderRadius: '5px'
-                }} onClick={() => setFlip(!flip)}>
                 
-                    Flip</button>
             </div>
         </ReactCardFlip>
         
