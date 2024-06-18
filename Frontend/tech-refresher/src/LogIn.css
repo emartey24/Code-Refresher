@@ -84,3 +84,18 @@
 .register-link p a:hover{
     text-decoration: underline;
 }
+
+.errorLabel {
+    display: block;
+    margin-top: 8px;
+    background-color: #eeb30e; 
+    color: black; 
+    border-radius: 4px; 
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  input::placeholder {
+    text-align: center;
+    font-weight: 600;
+}
