@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../LogIn.css';
 import { FaUser, FaLock } from 'react-icons/fa';
-import { useNavigate } from 'react-router-dom'; // Import useNavigate
+import { useNavigate } from 'react-router-dom'; 
 
 const Register = () => {
   const [email, setEmail] = useState('');
@@ -16,7 +16,8 @@ const Register = () => {
     return /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(email);
   };
 
-  // storing the data for email and password once it's properly inputted 
+
+  // storing the data for email and password once it's properly inputted
   const handleRegister = () => {
     setEmailError('');
     setPasswordError('');

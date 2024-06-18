@@ -47,7 +47,7 @@ const LogIn = ({ onLogin }) => {
     }
 
     // Navigate to the game page
-    navigate('/game');
+    navigate('/home');
   };
 
   return (

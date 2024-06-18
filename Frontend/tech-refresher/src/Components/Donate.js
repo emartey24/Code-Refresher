@@ -2,12 +2,15 @@ import React from 'react'
 import Card from 'react-bootstrap/Card';
 import Developers from '../Images/developers.png';
 import FlashCards from '../Images/flashcards.png';
+import Navbarcomponent from './Navbarcomponent';
 
 
 
 function Donate() {
   return (
     <>
+        <Navbarcomponent />
+
     <div className='h1'>
     <h1> Shop With Us </h1>
     <hr></hr>

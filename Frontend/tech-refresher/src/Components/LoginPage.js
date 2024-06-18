@@ -33,22 +33,6 @@ const Login = (props) => {
             return
         }
     }
-
-    //     // Check if email has an account associated with it
-    //     checkAccountExists(accountExists => {
-    //         // If yes, log in 
-    //         if (accountExists)
-    //             LogIn()
-    //         else
-    //         // Else, ask user if they want to create a new account and if yes, then log in
-    //             if (window.confirm("An account does not exist with this email address: " + email + ". Do you want to create a new account?")) {
-    //                 LogIn()
-    //             }
-    //     })        
-  
-
-    // }
-
     
 
     return <div className={"loginBody"}>

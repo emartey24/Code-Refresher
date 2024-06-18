@@ -2,10 +2,12 @@ import React from 'react';
 import HTP1 from '../Images/HTP1.png';
 import HTP2 from '../Images/HTP2.png';
 import HTP3 from '../Images/HTP3.png';
+import Navbarcomponent from './Navbarcomponent';
 
 function HowtoPlay() {
   return (
     <>
+    <Navbarcomponent />
     <div className="HTP">
     <img
             style={{ height: "90vh" }}
