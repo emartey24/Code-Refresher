@@ -1,6 +1,5 @@
 import React from 'react'
 import { useEffect, useState, useContext } from 'react'
-import ReactCardFlip from 'react-card-flip';
 import Card from './Card';
 import Navbarcomponent from './Navbarcomponent';
 
@@ -114,34 +113,30 @@ function Game() {
   return (
     <>
     <Navbarcomponent />
-    <center>
-    <br/>
-    <br/>
-    <Card/>
-    <div>{card1}</div>
-    <div>{card1a}</div>
-    <div>{card2}</div>
-    <div><img src={card2a} alt='card 2 answer'></img></div>
-    <div>{card3}</div>
-    <div><img src={card3a} alt='card 1 answer'></img></div>
-    <div>{card4}</div>
-    <div><img src={card4a} alt='card 1 answer'></img></div>
-    <div>{card5}</div>
-    <div><img src={card5a} alt='card 1 answer'></img></div>
-    <div>{card6}</div>
-    <div><img src={card6a} alt='card 1 answer'></img></div>
-    <div>{card7}</div>
-    <div><img src={card7a} alt='card 1 answer'></img></div>
-    <div>{card8}</div>
-    <div><img src={card8a} alt='card 1 answer'></img></div>
-    <div>{card9}</div>
-    <div><img src={card9a} alt='card 1 answer'></img></div>
-    <div>{card10}</div>
-    <div><img src={card10a} alt='card 1 answer'></img></div>
-
-    </center>
-    </>
-  )
+    <div className='cardsWrap'>
+        <Card input={card1} id={card1id} handleChoice={handleChoice} flipper={flipper}/>
+        <Card input={card1a} id={card1id} handleChoice={handleChoice} flipper={flipper}/>
+        <Card input={card2} id={card2id} handleChoice={handleChoice} flipper={flipper}/>
+        <Card input={card2a} id={card2id} handleChoice={handleChoice} flipper={flipper}/>
+        <Card input={card3} id={card3id} handleChoice={handleChoice} flipper={flipper}/>
+        <Card input={card3a} id={card3id} handleChoice={handleChoice} flipper={flipper}/>
+        <Card input={card4} id={card4id} handleChoice={handleChoice} flipper={flipper}/>
+        <Card input={card4a} id={card4id} handleChoice={handleChoice} flipper={flipper}/>
+        <Card input={card5} id={card5id} handleChoice={handleChoice} flipper={flipper}/>
+        <Card input={card5a} id={card5id} handleChoice={handleChoice} flipper={flipper}/>
+        <Card input={card6} id={card6id} handleChoice={handleChoice} flipper={flipper}/>
+        <Card input={card6a} id={card6id} handleChoice={handleChoice} flipper={flipper}/>
+        <Card input={card7} id={card7id} handleChoice={handleChoice} flipper={flipper}/>
+        <Card input={card7a} id={card7id} handleChoice={handleChoice} flipper={flipper}/>
+        <Card input={card8} id={card8id} handleChoice={handleChoice} flipper={flipper}/>
+        <Card input={card8a} id={card8id} handleChoice={handleChoice} flipper={flipper}/>
+        <Card input={card9} id={card9id} handleChoice={handleChoice} flipper={flipper}/>
+        <Card input={card9a} id={card9id}handleChoice={handleChoice} flipper={flipper}/>
+        <Card input={card10} id={card10id} handleChoice={handleChoice} flipper={flipper}/>
+        <Card input={card10a} id={card10id} handleChoice={handleChoice} flipper={flipper}/>
+    </div>
+</>
+)
 }
-
-export default Game
+export default Game;
+  
