@@ -57,10 +57,11 @@ For the Frontend of our site we used React framework to provide an interactive a
 ## Home Page
 <img src="./Frontend/tech-refresher/src/Images/TechRefresherFrontPage.png" ></img>
 
-## How to Play Page
-<img src="./Frontend/tech-refresher/src/Images/HTPpage1.png" ></img>
-<img src="./Frontend/tech-refresher/src/Images/HTPpage2.png" ></img>
-<img src="./Frontend/tech-refresher/src/Images/HTPpage3.png" ></img>
+## Self Study Guide
+<img src="./Frontend/tech-refresher/src/Images/ss1.png" ></img>
+<img src="./Frontend/tech-refresher/src/Images/ss2.png" ></img>
+<img src="./Frontend/tech-refresher/src/Images/ss3.png" ></img>
+<img src="./Frontend/tech-refresher/src/Images/ss4.png" ></img>
 
 ## Login Page
 <img src="./Frontend/tech-refresher/src/Images/TR Updated LogIn.png" ></img>
@@ -68,8 +69,8 @@ For the Frontend of our site we used React framework to provide an interactive a
 ## Register Page
 <img src="./Frontend/tech-refresher/src/Images/TR Register.png" ></img>
 
-## Game Page
-<img src="./Frontend/tech-refresher/src/Images/TRShopPage.png" ></img>
+## Flash Cards Page
+<img src="./Frontend/tech-refresher/src/Images/flash.png" ></img>
 
 ## Shop Page
 <img src="./Frontend/tech-refresher/src/Images/TRShopPage.png" ></img>
