@@ -10,8 +10,16 @@ body{
 .about{
   margin-right: 15%;
   margin-left: 15%;
+}
 
-
+.buttonContainer{
+  padding-top: 100px;
+  padding-left: 20px;
+}
+.buttonRefresh{
+  
+  height: 50px;
+  width: 75px;
 }
 
 h2{

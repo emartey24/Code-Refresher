@@ -112,13 +112,19 @@ function Game() {
 
     }, [selected1, selected2])
 
-   
+   const refresh = () => {
+        window.location.reload();
+   }
 
   return (
     <>
-  
-    
+    <Navbarcomponent/>
+        <div className='buttonContainer'>
+            <button onClick={refresh} className='buttonRefresh'>Refresh</button>
+        </div>
+
         <div className='cardsWrap'>
+            
             <Card input={card1} id={card1a} handleChoice={handleChoice} flipper={flipper}/>
             <Card input={card2} id={card2a} handleChoice={handleChoice} flipper={flipper}/>
             <Card input={card3} id={card3a} handleChoice={handleChoice} flipper={flipper}/>
