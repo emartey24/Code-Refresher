@@ -1,6 +1,9 @@
 import React, {useState, useEffect} from 'react';
 import ReactCardFlip from "react-card-flip"; //Had to download ReactCardFlip from the npm library: and import it here
-import background from '../Images/rightlogo.png';
+import background from '../Images/background1.png';
+import back from '../Images/background2.png';
+
+
 
 
 
@@ -31,6 +34,9 @@ function Card(props) {
       
   return (
     <>
+
+
+    
     {/* importing the flip card from the react-card-flip library, which controls the directioon, the onclick, and css of the cards */}
     <div></div>
      <ReactCardFlip isFlipped={flip}
@@ -39,8 +45,8 @@ function Card(props) {
                 width: '750px',
                 height: '300px',
                 fontSize: '40px',
-                background: '#EEB30D',
-                // backgroundImage: `url(${background})` ,
+                // background: '#EEB30D',
+                backgroundImage: `url(${background})` ,
                 color: 'black',
                 margin: '20px',
                 borderRadius: '4px',
@@ -54,7 +60,7 @@ function Card(props) {
             <div onClick={() => {setFlip(!flip)}} style={{
                 width: '750px',
                 height: '300px',
-                background: '#EEB30D',
+                backgroundImage: `url(${back})` ,
                 fontSize: '40px',
                 fontWeight: 'bold',
                 color: 'black',

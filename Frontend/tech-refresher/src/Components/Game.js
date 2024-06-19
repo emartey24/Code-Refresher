@@ -2,6 +2,7 @@ import React from 'react'
 import { useEffect, useState, useContext } from 'react'
 import Card from './Card';
 import Navbarcomponent from './Navbarcomponent';
+import flash from '../Images/flash.png';
 
 function Game() {
 
@@ -121,6 +122,9 @@ function Game() {
         </div>
 
         <div className='cardsWrap'>
+        <div className="flash">
+     <img src={flash} /> 
+    </div>
             
             <Card input={card1} id={card1a} handleChoice={handleChoice} flipper={flipper}/>
             <Card input={card2} id={card2a} handleChoice={handleChoice} flipper={flipper}/>

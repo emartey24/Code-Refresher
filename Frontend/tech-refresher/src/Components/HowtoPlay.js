@@ -1,7 +1,7 @@
 import React from 'react';
-import HTP1 from '../Images/HTP1.png';
-import HTP2 from '../Images/HTP2.png';
-import HTP3 from '../Images/HTP3.png';
+import HTP1 from '../Images/ss1.png';
+import HTP2 from '../Images/ss2.png';
+import HTP3 from '../Images/ss3.png';
 import Navbarcomponent from './Navbarcomponent';
 
 function HowtoPlay() {
