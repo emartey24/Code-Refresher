@@ -61,15 +61,11 @@ app.all('/*', (req, res, next) => {
 Endpoint:
     GET endpoint for fetching tech cards
 */
+
 app.get('/tech', async (req, res) => {
-    try {
-        const techData = await db.many('SELECT * FROM tech');
-        res.json(techData);
-    } catch (error) {
-        console.error('Error fetching tech data:', error.message);
-        res.status(500).json({ message: 'Internal server error' });
-    }
+  res.json(await db.many('SELECT * FROM tech ORDER BY RANDOM() LIMIT 10'))
 });
+
 
 /*
 Endpoint:
@@ -145,6 +141,6 @@ app.delete('/tech/:id', async (req, res) => {
     }
 });
 
-app.listen(3002, () => {
-    console.log('Server is running on port 3002');
+app.listen(3003, () => {
+    console.log('Server is running on port 3003');
 });
