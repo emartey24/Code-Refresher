@@ -74,7 +74,7 @@ Endpoint:
     GET endpoint for fetching tech cards
 */
 app.get('/tech', async (req, res) => {
-  res.json(await db.many('SELECT * FROM tech'))
+  res.json(await db.many('SELECT * FROM tech ORDER BY RANDOM() LIMIT 10'))
 });
 
 /*
