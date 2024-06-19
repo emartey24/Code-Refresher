@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../LogIn.css';
 import { FaUser, FaLock } from 'react-icons/fa';
-import { useNavigate } from 'react-router-dom'; 
+import { useNavigate } from 'react-router-dom';
 
 const Register = () => {
   const [email, setEmail] = useState('');
@@ -12,15 +12,10 @@ const Register = () => {
   const [confirmPasswordError, setConfirmPasswordError] = useState('');
   const navigate = useNavigate();
 
-
-  // the string has to match with a certain length and requirements
-  // also the email must consist of @com, @net, etc
   const validateEmail = (email) => {
     return /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(email);
   };
 
-
-  // storing the data for email and password once it's properly inputted
   const handleRegister = () => {
     setEmailError('');
     setPasswordError('');
@@ -54,10 +49,7 @@ const Register = () => {
       return;
     }
 
-   
     console.log('Registration successful');
-
-    // Navigate to the login page after successful registration
     navigate('/login');
   };
 
@@ -104,7 +96,7 @@ const Register = () => {
 
         <div className="login-link">
           <p>
-            Already have an account? <a href="/login">Login</a>
+            Already have an account? <a href="/login" onClick={(ev) => { ev.preventDefault(); navigate('/login'); }}>Login</a>
           </p>
         </div>
       </form>

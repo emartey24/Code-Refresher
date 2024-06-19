@@ -1,20 +1,15 @@
 import React, { useState } from 'react';
 import '../LogIn.css';
 import { FaUser, FaLock } from 'react-icons/fa';
-import { useNavigate } from 'react-router-dom'; 
+import { useNavigate } from 'react-router-dom';
 
 const LogIn = ({ onLogin }) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [emailError, setEmailError] = useState('');
   const [passwordError, setPasswordError] = useState('');
-  // useNavigate with help redirect to the game page once login is successfully confirmed 
-  // with proper email input and password 
-  const navigate = useNavigate(); 
+  const navigate = useNavigate();
 
-
-   // the string has to match with a certain length and requirements
-  // also the email must consist of @com, @net, etc
   const validateEmail = (email) => {
     return /^[\w-]+@([\w-]+)+[\w-]{2,4}$/.test(email);
   };
@@ -41,15 +36,12 @@ const LogIn = ({ onLogin }) => {
       return;
     }
 
-    // confirm that the login is successful through console.log via browser 
     console.log('Login successful');
 
-    // Call the onLogin callback to trigger navigation
     if (typeof onLogin === 'function') {
       onLogin();
     }
 
-    // Navigate to the home page
     navigate('/home');
   };
 
@@ -85,7 +77,7 @@ const LogIn = ({ onLogin }) => {
 
         <div className="register-link">
           <p>
-            Don't have an account? <a href="#">Register</a>
+            Don't have an account? <a href="/register">Register</a>
           </p>
         </div>
       </form>
