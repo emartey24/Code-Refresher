@@ -1,10 +1,7 @@
 import React from 'react'
 import { useEffect, useState, useContext } from 'react'
-import ReactCardFlip from 'react-card-flip';
 import Card from './Card';
 import Navbarcomponent from './Navbarcomponent';
-
-
 
 function Game() {
 
@@ -139,10 +136,5 @@ function Game() {
     </>
   )
 }
-export default Game
-
-
-
-
-
-
+export default Game;
+  

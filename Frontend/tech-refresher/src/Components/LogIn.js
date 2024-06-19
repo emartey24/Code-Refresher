@@ -12,6 +12,9 @@ const LogIn = ({ onLogin }) => {
   // with proper email input and password 
   const navigate = useNavigate(); 
 
+
+   // the string has to match with a certain length and requirements
+  // also the email must consist of @com, @net, etc
   const validateEmail = (email) => {
     return /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(email);
   };
@@ -46,7 +49,7 @@ const LogIn = ({ onLogin }) => {
       onLogin();
     }
 
-    // Navigate to the game page
+    // Navigate to the home page
     navigate('/home');
   };
 
