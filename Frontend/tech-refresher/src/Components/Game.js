@@ -4,7 +4,7 @@ import Navbarcomponent from './Navbarcomponent';
 import flash from '../Images/flash.png';
 
 function Game() {
-    const [cards, setCards] = useState([]);
+    const [, setCards] = useState([]);
     const [flipper, setFlipper] = useState(false);
     const [card1, setCard1] = useState();
     const [card1a, setCard1a] = useState();
