@@ -42,7 +42,7 @@ function Game() {
 
 
     useEffect(() => {
-        fetch('http://localhost:3001/tech')
+        fetch('http://localhost:3003/tech')
         .then(result => result.json())
         .then(data => {
             setCards(data)

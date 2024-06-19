@@ -48,7 +48,7 @@ function Card(props) {
             }}>
                 <br/>
                 <br/>
-                    <p>{props.id}</p>
+                    <p>{props.input}</p>
                 
             </div>
             <div onClick={() => {setFlip(!flip)}} style={{
@@ -64,7 +64,7 @@ function Card(props) {
                 padding: '100px'
             }}>
                 {/* here is where i add the state */}
-                <p className="libraFlip">{props.input}</p>
+                <p className="libraFlip">{props.id}</p>
                 
             </div>
         </ReactCardFlip>
