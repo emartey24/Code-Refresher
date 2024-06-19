@@ -10,7 +10,7 @@ function Home() {
   <Navbarcomponent />
     
     <div className="App">
-     <img src={TRnobakcground} /> 
+     <img src={TRnobakcground} alt="" /> 
     </div>
 
     <hr></hr>

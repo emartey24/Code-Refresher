@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import ReactCardFlip from "react-card-flip"; //Had to download ReactCardFlip from the npm library: and import it here
 import background from '../Images/background1.png';
 import back from '../Images/background2.png';
