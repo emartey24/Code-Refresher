@@ -15,13 +15,15 @@ function Card(props) {
 
     }
 
-    useEffect(() => {
-        if(props.flipper === true){
-            setTimeout(()=>{
-                setFlip(false)
-               }, 2000)
-        }
-    },[props.flipper])
+    // This was to flip back if the cards did not match
+
+    // useEffect(() => {
+    //     if(props.flipper === true){
+    //         setTimeout(()=>{
+    //             setFlip(false)
+    //            }, 2000)
+    //     }
+    // },[props.flipper])
 
 
     
@@ -34,30 +36,32 @@ function Card(props) {
      <ReactCardFlip isFlipped={flip}
             flipDirection="vertical">
            <div className='card' onClick={() => {setFlip(!flip); handleClick()}} style={{
-                width: '255px',
-                height: '120px',
-                fontSize: '70px',
-                backgroundImage: `url(${background})` ,
-                color: 'green',
+                width: '750px',
+                height: '300px',
+                fontSize: '40px',
+                background: '#EEB30D',
+                // backgroundImage: `url(${background})` ,
+                color: 'black',
                 margin: '20px',
                 borderRadius: '4px',
-                textAlign: 'center',
-                padding: '20px'
+                textAlign: 'center'
             }}>
-                <br />
-                <br />
+                <br/>
+                <br/>
+                    <p>{props.id}</p>
+                
             </div>
-            <div style={{
-                width: '225px',
-                height: '120px',
+            <div onClick={() => {setFlip(!flip)}} style={{
+                width: '750px',
+                height: '300px',
                 background: '#EEB30D',
-                fontSize: '15px',
+                fontSize: '40px',
                 fontWeight: 'bold',
                 color: 'black',
                 margin: '20px',
                 borderRadius: '4px',
                 textAlign: 'center',
-                padding: '40px'
+                padding: '100px'
             }}>
                 {/* here is where i add the state */}
                 <p className="libraFlip">{props.input}</p>

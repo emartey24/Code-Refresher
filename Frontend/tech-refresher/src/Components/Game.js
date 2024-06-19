@@ -5,6 +5,8 @@ import Navbarcomponent from './Navbarcomponent';
 
 function Game() {
 
+    const [cards, setCards] = useState ([])
+
     const [flipper, setFlipper] = useState(false)
 
     const [card1, setCard1] = useState()
@@ -43,6 +45,7 @@ function Game() {
         fetch('http://localhost:3001/tech')
         .then(result => result.json())
         .then(data => {
+            setCards(data)
             setCard1(data[0].question)
             setCard1a(data[0].answer)
             setCard1id(data[0].id)
@@ -106,35 +109,32 @@ function Game() {
 
     }, [selected1, selected2])
 
-   
+   const refresh = () => {
+        window.location.reload();
+   }
 
   return (
     <>
-    <Navbarcomponent />
-    <div className='cardsWrap'>
-        <Card input={card1} id={card1id} handleChoice={handleChoice} flipper={flipper}/>
-        <Card input={card1a} id={card1id} handleChoice={handleChoice} flipper={flipper}/>
-        <Card input={card2} id={card2id} handleChoice={handleChoice} flipper={flipper}/>
-        <Card input={card2a} id={card2id} handleChoice={handleChoice} flipper={flipper}/>
-        <Card input={card3} id={card3id} handleChoice={handleChoice} flipper={flipper}/>
-        <Card input={card3a} id={card3id} handleChoice={handleChoice} flipper={flipper}/>
-        <Card input={card4} id={card4id} handleChoice={handleChoice} flipper={flipper}/>
-        <Card input={card4a} id={card4id} handleChoice={handleChoice} flipper={flipper}/>
-        <Card input={card5} id={card5id} handleChoice={handleChoice} flipper={flipper}/>
-        <Card input={card5a} id={card5id} handleChoice={handleChoice} flipper={flipper}/>
-        <Card input={card6} id={card6id} handleChoice={handleChoice} flipper={flipper}/>
-        <Card input={card6a} id={card6id} handleChoice={handleChoice} flipper={flipper}/>
-        <Card input={card7} id={card7id} handleChoice={handleChoice} flipper={flipper}/>
-        <Card input={card7a} id={card7id} handleChoice={handleChoice} flipper={flipper}/>
-        <Card input={card8} id={card8id} handleChoice={handleChoice} flipper={flipper}/>
-        <Card input={card8a} id={card8id} handleChoice={handleChoice} flipper={flipper}/>
-        <Card input={card9} id={card9id} handleChoice={handleChoice} flipper={flipper}/>
-        <Card input={card9a} id={card9id}handleChoice={handleChoice} flipper={flipper}/>
-        <Card input={card10} id={card10id} handleChoice={handleChoice} flipper={flipper}/>
-        <Card input={card10a} id={card10id} handleChoice={handleChoice} flipper={flipper}/>
-    </div>
-</>
-)
+    <Navbarcomponent/>
+        <div className='buttonContainer'>
+            <button onClick={refresh} className='buttonRefresh'>Refresh</button>
+        </div>
+
+        <div className='cardsWrap'>
+            
+            <Card input={card1} id={card1a} handleChoice={handleChoice} flipper={flipper}/>
+            <Card input={card2} id={card2a} handleChoice={handleChoice} flipper={flipper}/>
+            <Card input={card3} id={card3a} handleChoice={handleChoice} flipper={flipper}/>
+            <Card input={card4} id={card4a} handleChoice={handleChoice} flipper={flipper}/>
+            <Card input={card5} id={card5a} handleChoice={handleChoice} flipper={flipper}/>
+            <Card input={card6} id={card6a} handleChoice={handleChoice} flipper={flipper}/>
+            <Card input={card7} id={card7a} handleChoice={handleChoice} flipper={flipper}/>
+            <Card input={card8} id={card8a} handleChoice={handleChoice} flipper={flipper}/>
+            <Card input={card9} id={card9a} handleChoice={handleChoice} flipper={flipper}/>
+            <Card input={card10} id={card10a} handleChoice={handleChoice} flipper={flipper}/>
+        </div>
+    </>
+  )
 }
 export default Game;
   
