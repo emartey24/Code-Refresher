@@ -16,7 +16,7 @@ const LogIn = ({ onLogin }) => {
    // the string has to match with a certain length and requirements
   // also the email must consist of @com, @net, etc
   const validateEmail = (email) => {
-    return /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(email);
+    return /^[\w-]+@([\w-]+)+[\w-]{2,4}$/.test(email);
   };
 
   const handleLogin = () => {

@@ -1,5 +1,5 @@
 import React from 'react'
-import { useEffect, useState, useContext } from 'react'
+import { useEffect, useState } from 'react'
 import Card from './Card';
 import Navbarcomponent from './Navbarcomponent';
 import flash from '../Images/flash.png';
@@ -123,7 +123,7 @@ function Game() {
 
         <div className='cardsWrap'>
         <div className="flash">
-     <img src={flash} /> 
+     <img src={flash} alt="" /> 
     </div>
             
             <Card input={card1} id={card1a} handleChoice={handleChoice} flipper={flipper}/>
