@@ -10,7 +10,6 @@ function Donate() {
   return (
     <>
         <Navbarcomponent />
-
     <div className='h1'>
     <h1> Shop With Us </h1>
     <hr></hr>
