@@ -480,3 +480,11 @@
 {"body":{"email":"davidle872@yahoo.com","password":"aznvi3tman11"},"endpoint":"/users/","error":400,"ip":"::1","level":"info","message":"Email already exists","method":"POST","pathParameters":{},"query":{},"timestamp":"Thu, 20 Jun 2024 22:43:05 GMT"}
 {"body":{},"endpoint":"/users/davidle872@yahoo.com","ip":"::1","level":"info","method":"GET","pathParameters":{"0":"users/davidle872@yahoo.com"},"query":{},"timestamp":"Thu, 20 Jun 2024 22:43:10 GMT"}
 {"body":{},"endpoint":"/tech","ip":"::1","level":"info","method":"GET","pathParameters":{"0":"tech"},"query":{},"timestamp":"Thu, 20 Jun 2024 22:47:33 GMT"}
+{"body":{},"endpoint":"/tech","ip":"::ffff:127.0.0.1","level":"info","method":"GET","pathParameters":{"0":"tech"},"query":{},"timestamp":"Thu, 20 Jun 2024 22:52:01 GMT"}
+{"body":{"email":"eman872@yahoo.com","password":"aznvi3tman11"},"endpoint":"/users/","ip":"::1","level":"info","method":"POST","pathParameters":{"0":"users/"},"query":{},"timestamp":"Thu, 20 Jun 2024 22:56:17 GMT"}
+{"body":{"email":"davidle872@yahoo.com","password":"aznvi3tman11"},"endpoint":"/users/","ip":"::1","level":"info","method":"POST","pathParameters":{"0":"users/"},"query":{},"timestamp":"Thu, 20 Jun 2024 22:58:57 GMT"}
+{"body":{"email":"davidle872@yahoo.com","password":"aznvi3tman11"},"endpoint":"/users/","error":400,"ip":"::1","level":"info","message":"Email already exists","method":"POST","pathParameters":{},"query":{},"timestamp":"Thu, 20 Jun 2024 22:58:57 GMT"}
+{"body":{"email":"beautifuljustin872@yahoo.com","password":"aznvi3tman11"},"endpoint":"/users/","ip":"::1","level":"info","method":"POST","pathParameters":{"0":"users/"},"query":{},"timestamp":"Thu, 20 Jun 2024 23:01:33 GMT"}
+{"body":{},"endpoint":"/users/davidle872@yahoo.com","ip":"::1","level":"info","method":"GET","pathParameters":{"0":"users/davidle872@yahoo.com"},"query":{},"timestamp":"Thu, 20 Jun 2024 23:01:43 GMT"}
+{"body":{"email":"dreiscooking872@yahoo.com","password":"aznvi3tman11"},"endpoint":"/users/","ip":"::1","level":"info","method":"POST","pathParameters":{"0":"users/"},"query":{},"timestamp":"Thu, 20 Jun 2024 23:05:32 GMT"}
+{"body":{},"endpoint":"/users/davidle872@yahoo.com","ip":"::1","level":"info","method":"GET","pathParameters":{"0":"users/davidle872@yahoo.com"},"query":{},"timestamp":"Thu, 20 Jun 2024 23:05:34 GMT"}
