@@ -28,7 +28,7 @@ function Game() {
     const [card10a, setCard10a] = useState();
 
     useEffect(() => {
-        fetch('http://localhost:3003/tech')
+        fetch('https://tech-refresher-backend.vercel.app/tech')
             .then(result => result.json())
             .then(data => {
                 setCards(data);
