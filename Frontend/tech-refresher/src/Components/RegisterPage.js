@@ -1,10 +1,10 @@
-/* eslint-disable no-useless-escape */
 import React, { useState } from 'react';
 import '../LogIn.css';
 import { FaUser, FaLock } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
 
 const Register = () => {
+
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
@@ -18,6 +18,8 @@ const Register = () => {
   };
 
   const handleRegister = () => {
+
+    
     setEmailError('');
     setPasswordError('');
     setConfirmPasswordError('');
@@ -50,8 +52,25 @@ const Register = () => {
       return;
     }
 
+    const myHeaders = new Headers();
+myHeaders.append("wq", "eq");
+myHeaders.append("Content-Type", "application/json");
+
+const raw = JSON.stringify({
+  "email": email,
+  "password": password
+});
+
+
+const requestOptions = {
+  method: "POST",
+  headers: myHeaders,
+  body: raw,
+};
+
+fetch("http://localhost:3003/users/", requestOptions)
     console.log('Registration successful');
-    navigate('/home');
+    navigate('/login');
   };
 
   return (
@@ -97,7 +116,7 @@ const Register = () => {
 
         <div className="login-link">
           <p>
-            Already have an account? <a href="/home" onClick={(ev) => { ev.preventDefault(); navigate('/home'); }}>Login</a>
+            Already have an account? <a href="/login" onClick={(ev) => { ev.preventDefault(); navigate('/login'); }}>Login</a>
           </p>
         </div>
       </form>
