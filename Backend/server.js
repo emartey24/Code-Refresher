@@ -8,12 +8,21 @@ const path = require('path');
 const bodyParser = require("body-parser"); // for parsing application/json
 const app = express();
 const db = pgp("postgres://kugfhzwa:XDEvpJvLkLV3cPozzlgmC2L9PRM5BJCw@ruby.db.elephantsql.com/kugfhzwa");
+const cors = require('cors');
+
 
 app.use('/static', express.static(path.join(__dirname, 'public')));
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 app.use(bodyParser.json());
 app.use("/api-docs", swaggerUI.serve, swaggerUI.setup(YAML.load('./api.yaml')));
+app.use(cors());
+
+app.use(cors({
+  origin: 'http://localhost:3000',
+  methods: ['GET', 'POST', 'DELETE', 'PUT'],
+  allowedHeaders: ['Content-Type', 'Authorization'],
+}));
 
 const logger = winston.createLogger({
     level: 'info',

@@ -11,9 +11,6 @@ const LogIn = ({ onLogin }) => {
 
   const navigate = useNavigate();
 
-  const validateEmail = (email) => {
-    return /^[\w-]+@([\w-]+)+[\w-]{2,4}$/.test(email);
-  };
 
   const handleLogin = () => {
     setEmailError('');
@@ -21,10 +18,6 @@ const LogIn = ({ onLogin }) => {
 
     if (email.trim() === '') {
       setEmailError('Please enter your email');
-      return;
-    }
-    if (!validateEmail(email)) {
-      setEmailError('Please enter a valid email');
       return;
     }
 
@@ -36,13 +29,17 @@ const LogIn = ({ onLogin }) => {
       setPasswordError('The password must be 8 characters or longer');
       return;
     }
-    console.log('Login successful');
 
 
+    const myHeaders = new Headers();
 
-    if (typeof onLogin === 'function') {
-      onLogin();
-    }
+const requestOptions = {
+  method: "GET",
+  headers: myHeaders,
+};
+  
+fetch(`http://localhost:3003/users/${email}`, requestOptions)
+  
 
     navigate('/home');
   };

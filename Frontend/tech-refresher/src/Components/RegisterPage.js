@@ -1,10 +1,10 @@
-/* eslint-disable no-useless-escape */
 import React, { useState } from 'react';
 import '../LogIn.css';
 import { FaUser, FaLock } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
 
 const Register = () => {
+
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
@@ -13,11 +13,11 @@ const Register = () => {
   const [confirmPasswordError, setConfirmPasswordError] = useState('');
   const navigate = useNavigate();
 
-  const validateEmail = (email) => {
-    return /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(email);
-  };
+
 
   const handleRegister = () => {
+
+    
     setEmailError('');
     setPasswordError('');
     setConfirmPasswordError('');
@@ -26,11 +26,7 @@ const Register = () => {
       setEmailError('Please enter your email');
       return;
     }
-    if (!validateEmail(email)) {
-      setEmailError('Please enter a valid email');
-      return;
-    }
-
+   
     if (password.trim() === '') {
       setPasswordError('Please enter a password');
       return;
@@ -50,8 +46,25 @@ const Register = () => {
       return;
     }
 
+    const myHeaders = new Headers();
+myHeaders.append("wq", "eq");
+myHeaders.append("Content-Type", "application/json");
+
+const raw = JSON.stringify({
+  "email": email,
+  "password": password
+});
+
+
+const requestOptions = {
+  method: "POST",
+  headers: myHeaders,
+  body: raw,
+};
+
+fetch("http://localhost:3003/users/", requestOptions)
     console.log('Registration successful');
-    navigate('/home');
+    navigate('/login');
   };
 
   return (
@@ -97,7 +110,7 @@ const Register = () => {
 
         <div className="login-link">
           <p>
-            Already have an account? <a href="/home" onClick={(ev) => { ev.preventDefault(); navigate('/home'); }}>Login</a>
+            Already have an account? <a href="/login" onClick={(ev) => { ev.preventDefault(); navigate('/login'); }}>Login</a>
           </p>
         </div>
       </form>
