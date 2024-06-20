@@ -8,6 +8,7 @@ const LogIn = ({ onLogin }) => {
   const [password, setPassword] = useState('');
   const [emailError, setEmailError] = useState('');
   const [passwordError, setPasswordError] = useState('');
+
   const navigate = useNavigate();
 
   const validateEmail = (email) => {
@@ -35,8 +36,9 @@ const LogIn = ({ onLogin }) => {
       setPasswordError('The password must be 8 characters or longer');
       return;
     }
-
     console.log('Login successful');
+
+
 
     if (typeof onLogin === 'function') {
       onLogin();
@@ -71,9 +73,9 @@ const LogIn = ({ onLogin }) => {
           <label className="errorLabel">{passwordError}</label>
         </div>
 
-        <button type="button" onClick={handleLogin}>
-          Login
-        </button>
+          <button type="button" onClick={handleLogin}>
+            Login
+          </button>
 
         <div className="register-link">
           <p>

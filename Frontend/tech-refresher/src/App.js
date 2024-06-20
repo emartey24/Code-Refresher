@@ -9,10 +9,11 @@ import Game from './Components/Game';
 import RegisterPage from './Components/RegisterPage';
 
 function App() {
-  const handleLogin = () => {
-    // Navigate to the home page after login
-    console.log('Login successful');
-  };
+  // const handleLogin = () => {
+  //   // Navigate to the home page after login
+  //   console.log('Login successfully');
+  // };
+
 
   return (
     <div>
@@ -21,7 +22,7 @@ function App() {
           <Route path="/" element={<RegisterPage />} />
           <Route path="home" element={<Home />} />
           <Route path="studyguide" element={<HowtoPlay />} />
-          <Route path="login" element={<LogIn onLogin={handleLogin} />} />
+          {/* <Route path="login" element={<LogIn onLogin={handleLogin} />} /> */}
           <Route path="flashcards" element={<Game />} />
           <Route path="shop" element={<Donate />} />
         </Routes>

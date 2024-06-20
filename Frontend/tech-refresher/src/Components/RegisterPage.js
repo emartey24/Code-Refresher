@@ -51,7 +51,7 @@ const Register = () => {
     }
 
     console.log('Registration successful');
-    navigate('/login');
+    navigate('/home');
   };
 
   return (
@@ -97,7 +97,7 @@ const Register = () => {
 
         <div className="login-link">
           <p>
-            Already have an account? <a href="/login" onClick={(ev) => { ev.preventDefault(); navigate('/login'); }}>Login</a>
+            Already have an account? <a href="/home" onClick={(ev) => { ev.preventDefault(); navigate('/home'); }}>Login</a>
           </p>
         </div>
       </form>
