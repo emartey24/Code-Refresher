@@ -6,8 +6,6 @@
   "scripts": {
     "start": "nodemon server.js && psql postgres://kugfhzwa:XDEvpJvLkLV3cPozzlgmC2L9PRM5BJCw@ruby.db.elephantsql.com/kugfhzwa"
   },
-
-  
   "author": "Ashley,David,Gabe,Emmanuel",
   "license": "ISC",
   "dependencies": {

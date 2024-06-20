@@ -3,7 +3,6 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
 import HowtoPlay from './Components/HowtoPlay';
 import Home from './Components/Home';
-
 import Donate from './Components/Donate';
 import Game from './Components/Game';
 import RegisterPage from './Components/RegisterPage';

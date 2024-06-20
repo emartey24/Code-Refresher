@@ -11,8 +11,6 @@ password VARCHAR(100)
 );
 
 
-
-
 INSERT INTO tech( question, answer)
 VALUES 
     ('What does HTML stand for?','HyperText Markup Language'),

@@ -13,9 +13,7 @@ const Register = () => {
   const [confirmPasswordError, setConfirmPasswordError] = useState('');
   const navigate = useNavigate();
 
-  const validateEmail = (email) => {
-    return /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(email);
-  };
+
 
   const handleRegister = () => {
 
@@ -28,11 +26,7 @@ const Register = () => {
       setEmailError('Please enter your email');
       return;
     }
-    if (!validateEmail(email)) {
-      setEmailError('Please enter a valid email');
-      return;
-    }
-
+   
     if (password.trim() === '') {
       setPasswordError('Please enter a password');
       return;
