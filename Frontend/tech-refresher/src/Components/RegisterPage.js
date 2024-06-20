@@ -55,7 +55,6 @@ const raw = JSON.stringify({
   "password": password
 });
 
-
 const requestOptions = {
   method: "POST",
   headers: myHeaders,
