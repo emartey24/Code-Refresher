@@ -30,8 +30,7 @@ function Game() {
     useEffect(() => {
         fetch('https://tech-refresher-backend.vercel.app/tech')
             .then(result => result.json())
-            .then(data => {
-                setCards(data);
+            .then(data => {                setCards(data);
                 setCard1(data[0].question);
                 setCard1a(data[0].answer);
                 setCard2(data[1].question);
