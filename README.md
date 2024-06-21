@@ -75,6 +75,10 @@ For the Frontend of our site we used React framework to provide an interactive a
 ## Shop Page
 <img src="./Frontend/tech-refresher/src/Images/TRShopPage.png" ></img>
 
+## Swaggger
+<img src="./Frontend/tech-refresher/src/Images/swagger2.png" ></img>
+<img src="./Frontend/tech-refresher/src/Images/swagger1.png" ></img>
+
 
 
 
