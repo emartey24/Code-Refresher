@@ -76,7 +76,7 @@ fetch(`http://localhost:3003/users/${email}`, requestOptions)
 
         <div className="register-link">
           <p>
-            Don't have an account? <a href="/register">Register</a>
+            Don't have an account? <a href="/" onClick={(ev) => { ev.preventDefault(); navigate('/'); }}>Register</a>
           </p>
         </div>
       </form>
