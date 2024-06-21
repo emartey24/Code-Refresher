@@ -46,9 +46,8 @@ For the Frontend of our site we used React framework to provide an interactive a
 ###  • React-Card-Flip
     We integrated React-Card-Flip for our memory game. When you click on the card it flips over because of this technology. 
 
-### • Vercel
+## ** Please make sure to have Allow CORS: access extension ** ##
 
-# [Swagger Documentation]
 
 ## Visit Our Website Here
 # [Tech Refresher]
