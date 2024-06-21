@@ -6,7 +6,7 @@ info:
   contact:
     email: davidle241872@yahoo.com
 servers:
-  - url: "http://localhost:3003/api-docs/"
+  - url: "http://localhost:3001/api-docs/"
     description: This is my local server
 schemes: [http, https]
 
